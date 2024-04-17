@@ -5801,7 +5801,7 @@ textarea.form-control-lg {
   touch-action: pan-y;
 }
 
-.carousel-inner {
+/* .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -5810,7 +5810,7 @@ textarea.form-control-lg {
   display: block;
   clear: both;
   content: "";
-}
+} */
 
 .carousel-item {
   position: relative;
