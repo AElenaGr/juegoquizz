@@ -11,6 +11,76 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+/* Estilos para el contenedor */
+.container {
+  position: relative;
+  display: inline-block;
+}
+.cmn-divfloat .fa-arrow-up {
+  width: 100px;
+  height: 50px;
+  left: 50px;
+  }
+  .topi{
+  text-align: center;
+  animation: flip 1s infinite; /* La animación dura 1 segundo y se repite infinitamente */
+
+  }
+/* Define la animación de la voltereta */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg); /* Sin rotación */
+  }
+  100% {
+    transform: rotateY(360deg); /* Rotación de 360 grados */
+  }
+}
+
+/* Aplica la animación de la voltereta a la imagen */
+.audio-player-image {
+  animation: flip 1s infinite; /* La animación dura 1 segundo y se repite infinitamente */
+}
+
+/* Estilos para el bocadillo */
+.speech-bubble {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: none; /* Ocultar inicialmente */
+}
+
+/* Mostrar el bocadillo al pasar el ratón sobre el contenedor */
+.container:hover .speech-bubble {
+  display: block;
+}
+
+
+
+/* Estilos para el bocadillo */
+.speech-bubble {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: none; /* Ocultar inicialmente */
+}
+
+/* Mostrar el bocadillo al pasar el ratón sobre el contenedor */
+.container:hover .speech-bubble {
+  display: block;
+}
+
  .audio-player {
   position: relative;
   top: 200px;
@@ -102,7 +172,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+ 
+  font-family: var(--bs-body-font-family); 
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -10888,7 +10959,9 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  /* background-color: #333; */
   background-color: black;
+  opacity: 90%;
   /* background-color: #212529; */
   
 }
@@ -10956,8 +11029,8 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 5rem; 
+  padding-bottom: 1rem; 
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg"); 
@@ -10985,8 +11058,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
